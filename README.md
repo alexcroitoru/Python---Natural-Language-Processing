@@ -1,104 +1,43 @@
-# Unit 12—Tales from the Crypto
+### UNIT 12 - TALES FROM THE CRYPTO
 
-![Stock Sentiment](Images/sentimental.jpeg)
 
-## Background
 
-There's been a lot of hype in the news lately about cryptocurrency, so you want to take stock, so to speak, of the latest news headlines regarding Bitcoin and Ethereum to get a better feel for the current public sentiment around each coin.
+## Questions:
 
-In this assignment, you will apply natural language processing to understand the sentiment in the latest news articles featuring Bitcoin and Ethereum. You will also apply fundamental NLP techniques to better understand the other factors involved with the coin prices such as common words and phrases and organizations and entities mentioned in the articles.
+Q: Which coin had the highest mean positive score?
 
-Complete the following tasks:
+A: BTC = 0.074
 
-1. [Sentiment Analysis](#1---Sentiment-Analysis)
-2. [Natural Language Processing](#2---Natural-Language-Processing)
-3. [Named Entity Recognition](#3---Named-Entity-Recognition)
+Q: Which coin had the highest compound score?
 
----
+A: ETH = 0.861
 
-## Files
+Q. Which coin had the highest positive score?
 
-[Starter Notebook](Starter_Code/crypto_sentiment.ipynb)
+A: BTC = 0.352
 
----
+________________________________________________________
 
-## Instructions
+# BTC Sentiment
+![BTC Sentiment](Images/Capture1.PNG)
+________________________________________________________
 
-----
 
-### 1 - Sentiment Analysis
+# ETH Sentiment
+![ETH Sentiment](Images/Capture2.PNG)
+________________________________________________________
 
-Use the [newsapi](https://newsapi.org/) to pull the latest news articles for Bitcoin and Ethereum and create a DataFrame of sentiment scores for each coin.
+# BTC Top Bigrams
+![BTC Top Bigrams](Images/Capture3.PNG)
+________________________________________________________
 
-Use descriptive statistics to answer the following questions:
+# ETH Top Bigrams
+![ETH Top Bigrams](Images/Captur4.PNG)
+________________________________________________________
 
-> Which coin had the highest mean positive score?
->
-> Which coin had the highest negative score?
->
-> Which coin had the highest positive score?
+# BTC Word Cloud
+![BTC Word Cloud](Images/Capture5.PNG)
+________________________________________________________
 
----
-
-### 2 - Natural Language Processing
-
-In this section, you will use NLTK and Python to tokenize text, find n-gram counts, and create word clouds for both coins. 
-
-#### Tokenize
-
-Be sure to:
-
-1. Lowercase each word.
-2. Remove punctuation.
-3. Remove stop words.
-
-#### N-grams
-
-Next, look at the ngrams and word frequency for each coin.
-
-1. Use NLTK to produce the ngrams for N = 2.
-2. List the top 10 words for each coin.
-
-#### Word Clouds
-
-Finally, generate word clouds for each coin to summarize the news for each coin.
-
-![btc-word-cloud.png](Images/btc-word-cloud.png)
-
-![eth-word-cloud.png](Images/eth-word-cloud.png)
-
----
-
-### 3 - Named Entity Recognition
-
-In this section, you will build a named entity recognition model for both coins and visualize the tags using SpaCy.
-
-![btc-ner.png](Images/btc-ner.png)
-
-![eth-ner.png](Images/eth-ner.png)
-
----
-
-## Resources
-
-[Vader Sentiment Analysis](http://www.nltk.org/howto/sentiment.html)
-
----
-
-## Hints and Considerations
-
-The free developer version of the News API limits the total daily requests, so be careful not to exceed the free limits.
-
----
-
-## Submission
-
-* Use the starter Jupyter Notebook provided to conduct the NLP analysis and host the notebook in a GitHub repository.
-
-* In your GitHub repository, include a ReadMe file that uses Markdown to summarize your homework.
-
-* Submit the link to your GitHub project to Bootcamp Spot.
-
----
-
-© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+# ETH Word Cloud
+![ETH Word Cloud](Images/Capture6.PNG)
